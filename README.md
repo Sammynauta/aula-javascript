@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #### aula-javascript
 Javascript Básico
 
@@ -49,3 +50,7 @@ Você pode facilmente incrementar ou adicionar um a uma variável com o operador
 -Word Blanks (PASSO5)
 
 
+=======
+# aula-javascript
+Introdução javascript
+>>>>>>> 7d610d55a72c475ed8e28a213a4f21c0912a9731
