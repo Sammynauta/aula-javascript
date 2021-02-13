@@ -11,7 +11,7 @@
 - Atribuição com valor devolvido (PASSO8)
 - Ficar na fila (PASSO9)
 - Compreendendo os valores booleanos (PASSO10)
-- Use lógica condicional com instruções If (PASSO11)
+- Use lógica condicional com instruções IF (PASSO11)
 - Comparação com o operador de igualdade (PASSO12)
 - Comparação com o operador de igualdade estrita (PASSO13)
 */

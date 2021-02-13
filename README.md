@@ -49,7 +49,7 @@ Javascript Básico
 - Use a notação de colchetes para encontrar o enésimo ao último caractere em uma string (PASSO4)
 - Word Blanks (PASSO5)
 
-# Conceitos Basicos.
+# CONCEITOS BÁSICOS.
 
 ## AULA01
 
@@ -65,3 +65,30 @@ Javascript Básico
 - Lista de compras (PASSO10)
 
 ## AULA02
+
+- Escreva JavaScript reutilizável com funções (PASSO1)
+- Passando Valores para Funções com Argumentos (PASSO2)
+- Escopo e funções globais (PASSO3)
+- Escopo e funções locais (PASSO4)
+- Escopo Global vs. Local em Funções(PASSO5)
+- Retorne um valor de uma função com retorno (PASSO6)
+- Compreendendo o valor indefinido retornado de uma função (PASSO7)
+- Atribuição com valor devolvido (PASSO8)
+- Ficar na fila (PASSO9)
+- Compreendendo os valores booleanos (PASSO10)
+- Use lógica condicional com instruções IF (PASSO11)
+- Comparação com o operador de igualdade (PASSO12)
+- Comparação com o operador de igualdade estrita (PASSO13)
+
+## AULA03
+
+- Pratique comparar valores diferentes (PASSO1)
+- Comparação com o operador de desigualdade (PASSO2)
+- Comparação com o operador de desigualdade estrita (PASSO3)
+- Comparação com o operador maior do que (PASSO4)
+- Comparação com o maior ou igual ao operador (PASSO5)
+- Comparação com o menos que o operador (PASSO6)
+- Comparação com o operador menor ou igual ao (PASSO7)
+- Comparações com a lógica && o operador (PASSO8)
+- Comparações com o operador lógico ||(PASOO9)
+- Apresentando outras declarações ELSE (PASSO10)
