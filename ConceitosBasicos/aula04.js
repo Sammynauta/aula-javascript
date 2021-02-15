@@ -6,14 +6,11 @@
 - Chaining If Else Statements (PASSO3)
 - Código de Golfe (PASSO4)
 - Seleção de muitas opções com declarações de switch (PASSO5)
--
--
--
--
--
--
--
--
+- Adicionando uma opção padrão nas instruções de switch (PASSO6)
+- Múltiplas opções idênticas em declarações de switch (PASSO7)
+- Substituição de cadeias if Else com switch (PASSO8)
+- Retornando valores booleanos de funções (PASSO9)
+- Retornar o padrão inicial para funções (PASSO10)
 */
 
 /*(PASSO1)
@@ -156,3 +153,138 @@ function caseInSwitch(val) {
   }
   
   caseInSwitch(1);
+
+
+  /*(PASSO6)
+  Em uma switchdeclaração, você pode não ser capaz de especificar todos os valores possíveis como casedeclarações.
+  Em vez disso, você pode adicionar a defaultinstrução que será executada 
+  se nenhuma caseinstrução correspondente for encontrada.
+  Pense nisso como a elsedeclaração final de uma if/elsecadeia.
+  */
+
+ function switchOfStuff(val) {
+  var answer = "";
+ 
+  switch(val) {
+    case "a":
+    answer = "maçã";
+    break;
+    case "b":
+     answer = "pássaro";
+    break;
+    case "c":
+     answer = "gato";
+    break;
+    case "d":
+    answer = "coisas";
+    break;
+    default:
+    answer = "coisas"
+  }
+  
+  return answer;
+}
+
+switchOfStuff("a");
+
+
+/*(PASSO7)
+Se a breakinstrução for omitida de uma switchinstrução case, a case(s) instrução (ões) a seguir serão executadas
+até que um breakseja encontrado.
+Se você tiver várias entradas com a mesma saída, poderá representá-las em uma switchinstrução como esta: 
+*/
+
+function sequentialSizes(val) {
+  var answer = "";
+  switch (val) {
+    case 1:
+    case 2:
+    case 3:
+      answer = "BAIXO";
+      break;
+    case 4:
+    case 5:
+    case 6:
+     answer = "MÉDIO";
+      break;
+    case 7:
+    case 8:
+    case 9:
+     answer = "ALTO";
+      break;
+      
+  }
+  return answer;
+}
+
+sequentialSizes(1);
+
+/*(PASSO8)
+Se você tiver muitas opções para escolher, uma switch declaração pode ser mais fácil de escrever
+do que muitas declarações if/ encadeadas else if. Os seguintes:
+
+*/
+function chainToSwitch(val) {
+var answer = "";
+
+  switch (val){
+    case "bob":
+    answer = "Marley";
+    break;
+    case 42:
+    answer = "The Answer";
+    break;
+    case 1:
+    answer = "There is no #1";
+    break;
+    case 99:
+    answer = "Missed me by this much!";
+    break;
+    case 7:
+     answer = "Ate Nine";
+    break;
+    default:
+     answer = "";
+     break;
+  }
+  
+  return answer;
+}
+
+chainToSwitch(7);
+
+/*(PASSO9)
+Você deve se lembrar de Comparison with the Equality Operator que todos os operadores de comparação
+retornam um valor booleano true ou false.
+
+Mas existe uma maneira melhor de fazer isso. Já que ===retorna trueou false,
+podemos retornar o resultado da comparação:
+
+function isEqual(a,b) {
+  return a === b;
+}
+*/
+
+function menorQue(a, b) {
+  
+  return a < b;
+  
+}
+
+menorQue(10, 15);
+
+/*(PASS010)
+Quando uma return instrução é alcançada, a execução da função atual para e o controle retorna ao local de chamada.
+ */
+
+// Setup
+function abTest(a, b) {
+ 
+   if( a < 0 || b < 0) {
+     return undefined;
+   } 
+
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+
+abTest(2,2);

@@ -92,3 +92,29 @@ Javascript Básico
 - Comparações com a lógica && o operador (PASSO8)
 - Comparações com o operador lógico ||(PASOO9)
 - Apresentando outras declarações ELSE (PASSO10)
+
+## AULA04
+
+- Apresentando as declarações Else If (PASSO1)
+- Ordem Lógica nas Declarações If Else (PASSO2)
+- Chaining If Else Statements (PASSO3)
+- Código de Golfe (PASSO4)
+- Seleção de muitas opções com declarações de switch (PASSO5)
+- Adicionando uma opção padrão nas instruções de switch (PASSO6)
+- Múltiplas opções idênticas em declarações de switch (PASSO7)
+- Substituição de cadeias if Else com switch (PASSO8)
+- Retornando valores booleanos de funções (PASSO9)
+- Retornar o padrão inicial para funções (PASSO10)
+
+## AULA05
+
+- Cartas de contagem (PASSO1)
+- Construir objetos JavaScript (PASSO2)
+- Acessando Propriedades de Objetos com Notação de Pontos (PASSO3)
+- Acessando propriedades de objetos com notação de colchetes (PASSO4)
+- Acessando Propriedades de Objetos com Variáveis (PASSO5)
+- Atualizando Propriedades do Objeto (PASSO6)
+- Adicionar novas propriedades a um objeto JavaScript (PASSO7)
+- Excluir propriedades de um objeto JavaScript (PASSO8)
+- Usando objetos para pesquisas (PASSO9)
+- Testando objetos para propriedades (PASSO10)
