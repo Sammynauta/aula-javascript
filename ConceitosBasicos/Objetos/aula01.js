@@ -1,61 +1,46 @@
-//Conceitos Basicos parte05
-
 /*
-- Cartas de contagem (PASSO1)
+- Manipulando objetos complexos (PASSO1)
 - Construir objetos JavaScript (PASSO2)
 - Acessando Propriedades de Objetos com Notação de Pontos (PASSO3)
-- Acessando propriedades de objetos com notação de colchetes (PASSO4)
+- Acessando propriedades de Objetos com notação de colchetes (PASSO4)
 - Acessando Propriedades de Objetos com Variáveis (PASSO5)
 - Atualizando Propriedades do Objeto (PASSO6)
 - Adicionar novas propriedades a um objeto JavaScript (PASSO7)
 - Excluir propriedades de um objeto JavaScript (PASSO8)
 - Usando objetos para pesquisas (PASSO9)
 - Testando objetos para propriedades (PASSO10)
+- Acessando objetos aninhados (PASSO 11)
+- Coleção de discos (PASSO12)
 */
 
-/*
-No jogo de cassino Blackjack, um jogador pode ganhar uma vantagem sobre a casa mantendo o controle
- do número relativo de cartas altas e baixas restantes no baralho. Isso é chamado de contagem de cartas .
-Ter mais cartas altas restantes no baralho favorece o jogador. Cada cartão recebe um valor de acordo com a tabela
- abaixo. Quando a contagem é positiva, o jogador deve apostar alto. Quando a contagem é zero ou negativa,
-o jogador deve apostar baixo.
+// PASSO1
 
-
-Mudança de contagem /Cartas
-+1 ---	/2, 3, 4, 5, 6
- 0 ---  /7, 8, 9
--1 ---  /10, 'J', 'Q', 'K', 'A'
-*/
-
-var count = 0;
-
-function cc(card) {
-  switch (card) {
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-  count++;
-  break;
-    case 10:
-    case 'J':
-    case 'Q':
-    case 'K':
-    case 'A':
-  count--;
-  break;
+var myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  },
+  // Add outro album abaixo
+  {
+     "artist": "Bon Jovi",
+    "title": "Love me Again",
+    "release_year": 1998,
+    "formats": [
+      "CD",
+      "8T",
+      "LP",
+      "Digital Midia"
+    ],
+    "gold": true
   }
- var holdbet = 'Hold'
-  if (count > 0) {
-    holdbet = 'Bet'
-  }
-
-  return count + " " + holdbet;
-}
-
-cc(2); cc(3); cc(5); cc('K'); cc('A');
-
+];
 
 /* (PASSO2)
 Você pode ter ouvido o termo objectantes.
@@ -218,3 +203,71 @@ function checkObj(obj, checkProp) {
        return "Not Found";
      }
    }
+
+   // PASSO 11
+//As subpropriedades dos objetos podem ser acessadas encadeando a notação de ponto ou colchete.
+
+var myStorage = {
+  "carro": {
+    "dentro": {
+      "porta-luvas": "mapas",
+      "assento do carona": "farelos"
+     },
+    "fora": {
+      "mala": "sammy"
+    }
+  }
+};
+
+var gloveBoxContents = myStorage.carro.dentro["porta-luvas"];
+
+//deve me retornar o mapa.
+
+// PASSO 12
+/*
+Você começa com uma updateRecordsfunção que pega um objeto como collection, an id, a prop(como artistou tracks)
+e a value. Conclua a função usando as regras abaixo para modificar o objeto passado para a função.
+
+Sua função deve sempre retornar o objeto inteiro.
+Se prop não for track se nem value for uma string vazia, atualize ou defina o do álbum propcomo value.
+Se prop for, tracksmas o álbum não tiver uma tracks propriedade, crie um array vazio e adicione value a ele.
+Se prop for tracks e value não for uma string vazia, adicione valueao final da tracks matriz existente do álbum .
+Se value for uma string vazia, exclua a prop propriedade fornecida do álbum.
+
+Nota: Uma cópia do collectionobjeto é usada para os testes.
+*/
+
+
+var collection = {
+  2548: {
+    albumTitle: 'Slippery When Wet',
+    artist: 'Bon Jovi',
+    tracks: ['Let It Rock', 'You Give Love a Bad Name']
+  },
+  2468: {
+    albumTitle: '1999',
+    artist: 'Prince',
+    tracks: ['1999', 'Little Red Corvette']
+  },
+  1245: {
+    artist: 'Robert Palmer',
+    tracks: []
+  },
+  5439: {
+    albumTitle: 'ABBA Gold'
+  }
+};
+
+function updateRecords(object, id, prop, value) {
+  if (prop !== 'tracks' && value !== "") {
+    object[id][prop] = value;
+  } else if (prop === "tracks" && !object[id].hasOwnProperty("tracks")) {
+    object[id][prop] = [value];
+  } else if (prop === "tracks" && value !== "") {
+    object[id][prop].push(value);
+  } else if (value === "") {
+    delete object[id][prop];
+  }
+  return object;
+}
+updateRecords(collection, 5439, 'artist', 'ABBA');

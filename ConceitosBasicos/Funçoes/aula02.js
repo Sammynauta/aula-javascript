@@ -1,5 +1,3 @@
-//Conceitos Basicos parte03
-
 /*
 - Pratique comparar valores diferentes (PASSO1)
 - Comparação com o operador de desigualdade (PASSO2)

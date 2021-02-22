@@ -1,5 +1,3 @@
-//Conceitos Basicos parte01
-
 /*
 - Armazene vários valores em uma variável usando matrizes JavaScript (PASSO1)
 - Aninhar uma matriz dentro de outra matriz (PASSO2)
@@ -11,6 +9,7 @@
 - Manipular matrizes com shift () (PASSO8)
 - Manipular matrizes com unshift () (PASSO9)
 - Lista de compras (PASSO10)
+- Acessando matrizes aninhadas (PASSO11)
 */
 
 
@@ -92,3 +91,28 @@ myArray = [["Paul", 35], ["dog", 3]];
 A lista deve ser uma matriz multidimensional contendo várias submatrizes.*/
 var myList = [["ovos", 12], ["carne", 7], ["Biscoito", 3], 
 ["Refrigerante", 8], ["Leite", 10], ["Arroz", 7]];
+
+
+// PASSO 11
+var minhasPlantas = [
+    {
+      type: "flores",
+      list: [
+        "rosa",
+        "tulipa",
+        "girassol"
+      ]
+    },
+    {
+      type: "arvores",
+      list: [
+        "figueira",
+        "pinheiro",
+        "palmeira"
+      ]
+    }
+  ];
+  
+  var segundaArvore = minhasPlantas[1].list[1]; 
+
+  // deve me retornar pinheiro.

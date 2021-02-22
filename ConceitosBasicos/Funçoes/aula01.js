@@ -1,5 +1,3 @@
-//Conceitos Basicos parte02
-
 /*
 - Escreva JavaScript reutilizável com funções (PASSO1)
 - Passando Valores para Funções com Argumentos (PASSO2)

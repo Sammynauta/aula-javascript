@@ -1,5 +1,3 @@
-// Introdução ao Javascript parte3
-
 /* 
 -Declarar variáveis ​​de string (PASSO1)
 -Fugindo de citações literais em cordas (PASSO2)

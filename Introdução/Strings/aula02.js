@@ -1,5 +1,3 @@
-// Introdução ao Javascript parte4
-
 /* 
 -Compreender a imutabilidade da String (PASSO1) 
 -Use a notação de colchetes para encontrar o enésimo caractere em uma string (PASSO2)

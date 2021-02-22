@@ -1,5 +1,3 @@
-// Introdução ao Javascript 
-
 /*
 
 -Aprendendo a comentar codigos. (passo1)

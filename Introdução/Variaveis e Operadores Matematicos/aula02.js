@@ -1,5 +1,3 @@
-// Introdução ao Javascript parte2
-
 /* 
 -Divida um número por outro com JavaScript (PASSO1)
 -Incrementar um número com JavaScript 

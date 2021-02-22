@@ -1,5 +1,3 @@
-//Conceitos Basicos parte04
-
 /*
 - Apresentando as declarações Else If (PASSO1)
 - Ordem Lógica nas Declarações If Else (PASSO2)
@@ -11,6 +9,7 @@
 - Substituição de cadeias if Else com switch (PASSO8)
 - Retornando valores booleanos de funções (PASSO9)
 - Retornar o padrão inicial para funções (PASSO10)
+- Cartas de contagem (PASSO11)
 */
 
 /*(PASSO1)
@@ -277,7 +276,6 @@ menorQue(10, 15);
 Quando uma return instrução é alcançada, a execução da função atual para e o controle retorna ao local de chamada.
  */
 
-// Setup
 function abTest(a, b) {
  
    if( a < 0 || b < 0) {
@@ -288,3 +286,47 @@ function abTest(a, b) {
 }
 
 abTest(2,2);
+
+//PASSO 11
+/*
+No jogo de cassino Blackjack, um jogador pode ganhar uma vantagem sobre a casa mantendo o controle
+ do número relativo de cartas altas e baixas restantes no baralho. Isso é chamado de contagem de cartas .
+Ter mais cartas altas restantes no baralho favorece o jogador. Cada cartão recebe um valor de acordo com a tabela
+ abaixo. Quando a contagem é positiva, o jogador deve apostar alto. Quando a contagem é zero ou negativa,
+o jogador deve apostar baixo.
+
+
+Mudança de contagem /Cartas
++1 ---	/2, 3, 4, 5, 6
+ 0 ---  /7, 8, 9
+-1 ---  /10, 'J', 'Q', 'K', 'A'
+*/
+
+var count = 0;
+
+function cc(card) {
+  switch (card) {
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+  count++;
+  break;
+    case 10:
+    case 'J':
+    case 'Q':
+    case 'K':
+    case 'A':
+  count--;
+  break;
+  }
+ var holdbet = 'Hold'
+  if (count > 0) {
+    holdbet = 'Bet'
+  }
+
+  return count + " " + holdbet;
+}
+
+cc(2); cc(3); cc(5); cc('K'); cc('A');
