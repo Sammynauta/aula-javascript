@@ -12,6 +12,7 @@
 */
 
 
+
 //(PASSO1)
 var myFirstName = "Samuel";
 var myLastName = "Olivera Diogo";

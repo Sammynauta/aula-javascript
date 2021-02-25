@@ -6,6 +6,7 @@
 -Word Blanks (PASSO5)
 */
 
+
 //(PASSO1)
 var myStr = "Jello World";
 

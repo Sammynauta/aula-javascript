@@ -11,3 +11,11 @@
 - MATRIZ;
 - OBJETOS;
 - LOOPS WHILE & FOR;
+
+### Final do Conteúdo básico.
+
+- parseInt();
+- Math.floor ();
+- Math.random();
+- Operadores Ternarios
+- Recursividade.

@@ -14,6 +14,7 @@ Você pode facilmente incrementar ou adicionar um a uma variável com o operador
 -Atribuição composta com divisão aumentada (PASSO11)
 */
 
+
 //(PASSO1)
 var divisao = 15 / 3;
 

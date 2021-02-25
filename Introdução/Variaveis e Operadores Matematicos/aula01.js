@@ -1,5 +1,4 @@
 /*
-
 -Aprendendo a comentar codigos. (passo1)
 -Declarar variaveis. (passo2)
 -armazenamento de valor em uma variavel (passo3)
@@ -12,12 +11,15 @@
 -Multiplique dois números com JavaScript (passo10) 
 */
 
+//Comentário (passo 1)
+
 var MeuNumero; //passo2
+
 MeuNumero = 5; //passo3
+
 NumeroImpar = MeuNumero //(passo4)
 
 var myVar = 7; //(passo5)
-
 
 //(passo6)
 // Apenas altere o código abaixo desta linha
@@ -51,4 +53,3 @@ var subt = 10 - 5;
 
 //(passo10)
 var mult = 10 * 5;
-
